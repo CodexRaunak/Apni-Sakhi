@@ -1,0 +1,40 @@
+section {
+  padding-top: 7rem;
+  background-color: #f9f8ff;
+  display: flex;
+}
+.new-card {
+  height: 100vh;
+  width: 32vw !important;
+  border: none;
+  padding-top: 3rem;
+}
+.new-card img {
+  width: 100%;
+}
+
+.card {
+  border: none;
+  background-color: #f9f8ff;
+  color: #5312b0;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 25px;
+}
+.card-body {
+  font-size: 18px;
+  font-weight: 500;
+}
+.center {
+  text-align: center;
+}
+
+.purple {
+  border: 1px solid #5312b0 !important;
+  color: white;
+  background-color: #5312b0;
+}
+.purple:hover {
+  background-color: #441488;
+}

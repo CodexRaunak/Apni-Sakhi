@@ -1,0 +1,40 @@
+<nav class="stick hidden" id="navbar">
+  <div class="header d-flex justify-content-center align-items-center flex-nowrap">
+    <div class="header-logo">
+      <a href="http://localhost:3000/"
+        ><img src="/assets/logo2.png" alt="logo" style="width: 6.5rem"
+      /></a>
+      <a class="logo-text" href="http://localhost:3000/">Apni Sakhi</a>
+    </div>
+    <div class="nav-options">
+      <span class="ms-3">
+        <a href="http://localhost:3000/"
+          >Scholarships <i class="fa-solid fa-caret-down ms-1"></i></a
+      ></span>
+      <span class="ms-3"
+        ><a href="http://localhost:3000/">Join the Community</a></span
+      >
+    </div>
+  </div>
+  <div class="header-options ">
+     <a href="#"
+        ><img src="/assets/play-now.png" alt="video-btn" style="width: 50%"
+      /></a>
+    </div>
+  </div>
+</nav>
+<script>
+  window.onscroll = function() {addSticky()};
+
+let navbar = document.getElementById("navbar");
+
+let sticky = navbar.offsetTop;
+
+function addSticky() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("stick")
+  } else {
+    navbar.classList.remove("stick");
+  }
+} 
+</script>

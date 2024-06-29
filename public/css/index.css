@@ -1,0 +1,357 @@
+.heroo {
+  height: 67vh;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  background-image: url("/assets/hero-img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 6rem;
+}
+
+.heroo-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  padding: 3rem 0.2rem;
+}
+
+.heroo-text {
+  max-width: 48vw;
+}
+.heroo-text h1 {
+  font-weight: 600;
+  font-size: 3.25rem;
+}
+.heroo-text span a {
+  cursor: pointer;
+}
+.heroo-desc {
+  font-weight: 600;
+}
+.heroo-girl {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+}
+
+.gradient {
+  background: linear-gradient(to bottom, #eeeeee, #beb9b9);
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gradient img {
+  height: 70%;
+}
+
+.gradient-text {
+  font-weight: 500;
+  color: black;
+}
+.gradient-text a {
+  color: black;
+}
+.containers {
+  margin: auto;
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10rem;
+}
+.card {
+  border: none !important;
+  text-align: center !important;
+}
+.card img {
+  width: 9rem;
+  margin: auto;
+  display: block;
+}
+.card-title {
+  color: #531294;
+  font-weight: 600;
+}
+.card-text {
+  color: #5312b0;
+  font-weight: 500;
+}
+/* -------------------- */
+
+.play-action {
+  font-weight: 600;
+  color: #531294;
+  font-size: 30px;
+}
+.feild {
+  text-align: center;
+}
+.feild img {
+  width: 5rem;
+}
+.head-b {
+  color: #531294;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 2.5rem;
+}
+.video {
+  color: #531294;
+  font-weight: 600;
+}
+.head {
+  margin: 5rem 0;
+}
+.background-para {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.b-block {
+  background: url("https://curiousworld-static-files.s3.amazonaws.com/cw_files/lineup-background.svg");
+  height: 85vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 19vw 15vw;
+  color: white;
+}
+
+.foot-img {
+  position: absolute;
+  width: 80%;
+  left: 8rem;
+  top: 20rem;
+}
+.line {
+  border-top: 3px solid #531294;
+  width: 4rem;
+  margin: auto;
+}
+.featured {
+  margin-top: 10rem;
+  color: #531294;
+  font-weight: 600;
+  height: 120vh;
+  background-color: #f9f8ff;
+  padding-top: 5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2.5rem;
+  gap: 1.6rem;
+}
+
+.new-card {
+  border-radius: 1rem !important;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+  padding-bottom: 30px;
+  transition: all ease-in-out 0.5s;
+}
+.new-card:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 10px 0px #716d77;
+}
+.purple {
+  border: 1px solid #5312b0 !important;
+  color: #5312b0;
+}
+.purple:hover {
+  background-color: #5312b0;
+  border: #5312b0;
+}
+
+/* .hidden {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(10px);
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+/* @keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hidden {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+} */
+
+.card {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.card.activee {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.a {
+  position: relative;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.a.activee {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.b {
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.b.activee {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* ------------------ */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  justify-content: center;
+  margin-top: 9rem;
+  background: linear-gradient(45deg, #5312b0 0%, #5312b0 50%),
+    url("https://mentalhealth-ap07.s3.amazonaws.com/assets1/img/hero-bg.jpg")
+      center center no-repeat;
+  color: white;
+}
+@media (max-width: 891px) {
+  .footer {
+    margin-top: 8rem;
+  }
+}
+.section {
+  width: 20vw;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+}
+.section-1 {
+  margin-right: 68px;
+}
+
+.section-1-logo {
+  width: 50%;
+}
+
+.section-1-logo img {
+  width: 50%;
+
+  /* margin-top: 15px; */
+}
+
+.section-1-icons {
+  margin: 0 15px;
+  margin-top: 10px;
+}
+
+.section-1-icons i {
+  margin-right: 5px;
+  font-size: 30px;
+  color: #5312b0;
+}
+
+.section-2-title {
+  margin: 0 15px;
+}
+.section-2-title h4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.section-2-tags ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0 15px; /* Remove margins */
+  /* text-decoration: none; */
+}
+
+.section-2-tags ul li {
+  line-height: 30px;
+}
+
+.section-2-tags ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.section-4-input input {
+  display: block;
+  width: 80%;
+  /* margin: 0 10%; */
+  /* margin-left: 15px; */
+  margin-bottom: 10px;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 0;
+}
+
+.section-4-input button {
+  display: block;
+  width: 80%;
+  /* margin: 0 10%; */
+  /* margin-left: 15px; */
+  margin-bottom: 10px;
+  text-align: center;
+  margin: auto;
+  padding: 10px 0;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  color: #5312b0;
+  border: none;
+}
+
+.section-4-input button:hover {
+  background-color: black;
+  color: white;
+}
